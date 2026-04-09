@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Safety from './pages/Safety';
 
 // Empty Placeholder for Members
 const Placeholder = ({ name }) => (
@@ -20,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Placeholder name="Dashboard" />} />
             <Route path="/traffic" element={<Placeholder name="Live Traffic Map" />} />
-            <Route path="/safety" element={<Placeholder name="Road Safety Tips" />} />
+            <Route path="/Safety" element={<Safety />} />
           </Routes>
         </main>
 
