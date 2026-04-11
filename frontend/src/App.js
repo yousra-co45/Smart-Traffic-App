@@ -5,13 +5,9 @@ import Footer from './components/Footer';
 import Safety from './pages/Safety';
 import Traffic from './pages/Traffic';
 import Home from './pages/Home';
+import Emergency from './pages/Emergency';
 
-// Empty Placeholder for Members
-const Placeholder = ({ name }) => (
-  <div className="flex flex-col items-center justify-center min-h-[60vh] text-slate-500 italic">
-    <p>{name} Page is under development...</p>
-  </div>
-);
+
 
 function App() {
   return (
@@ -23,7 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/traffic" element={<Traffic />} />
-            <Route path="/safety" element={<Safety />} />
+            <Route path="/Safety" element={<Safety />} />
+            <Route path="/emergency" element={<Emergency/>} />
           </Routes>
         </main>
 
