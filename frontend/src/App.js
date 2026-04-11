@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Safety from './pages/Safety';
+import Traffic from './pages/Traffic';
+import Home from './pages/Home';
+
 
 // Empty Placeholder for Members
 const Placeholder = ({ name }) => (
@@ -19,9 +22,9 @@ function App() {
         
         <main className="flex-grow container mx-auto px-4 py-10">
           <Routes>
-            <Route path="/" element={<Placeholder name="Dashboard" />} />
-            <Route path="/traffic" element={<Placeholder name="Live Traffic Map" />} />
-            <Route path="/Safety" element={<Safety />} />
+            <Route path="/traffic" element={<Traffic />} />
+            <Route path="/safety" element={<Safety />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </main>
 
