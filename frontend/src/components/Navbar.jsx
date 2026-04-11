@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <motion.div 
+        <motion.div
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           className="flex items-center gap-2 text-trafficGreen font-bold text-xl"
@@ -25,6 +25,9 @@ const Navbar = () => {
           </Link>
           <Link to="/safety" className="hover:text-trafficYellow transition-colors flex items-center gap-1">
             <ShieldCheck size={18} /> Safety
+          </Link>
+          <Link to="/emergency" className="hover:text-trafficYellow transition-colors flex items-center gap-1">
+            <ShieldCheck size={18} /> Emergency
           </Link>
         </div>
       </div>
