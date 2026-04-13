@@ -6,8 +6,7 @@ import Safety from './pages/Safety';
 import Home from './pages/Home';
 import Traffic from './pages/Traffic';
 import Emergency from './pages/Emergency';
-
-
+import SmartRoutes from './pages/Routes'; 
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/safety" element={<Safety />} />
             <Route path="/traffic" element={<Traffic />} />
-            <Route path="/Safety" element={<Safety />} />
+            <Route path="/routing" element={<SmartRoutes />} /> 
             <Route path="/emergency" element={<Emergency/>} />
           </Routes>
         </main>
